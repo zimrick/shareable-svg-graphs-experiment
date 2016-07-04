@@ -5,14 +5,19 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index"
+    "start": "node index",
+    "dev": "webpack --progress --colors --watch"
   },
   "author": "zimrick",
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.15.2",
+    "d3": "^4.1.0",
     "express": "^4.14.0",
     "morgan": "^1.7.0",
     "serve-favicon": "^2.3.0"
+  },
+  "devDependencies": {
+    "webpack": "^1.13.1"
   }
 }
