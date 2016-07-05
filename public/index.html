@@ -3,11 +3,22 @@
   <head>
     <meta charset="utf-8">
     <title>Svg Img Handler</title>
+    <style media="screen">
+      html { font-family: 'Roboto', sans-serif; font-size:100%; }
+      body { margin: 120px; font-size: 1rem; }
+      button { background: #0096E1; color: #fff; font-family: inherit; font-size: inherit; padding: 1rem; border: 0; cursor:pointer; }
+      .canvas-wrapper,.png-wrapper { display: none; }
+    </style>
   </head>
   <body>
+    <h1>Shareable SVG graphs</h1>
     <p>Convert the below svg to an image and then upload it to the server.</p>
     <div id="visualization"></div>
-    <button type="button" name="convertAndSave">Convert and Save</button>
+    <div class="canvas-wrapper"><canvas id="canvas" width="600" height="300"></canvas></div>
+    <div id="png-container" class="png-wrapper"></div>
+    <hr />
+    <div id="response"></div>
+    <button type="button" name="convertAndSave" id="converter">Share this graph</button>
     <script src="/client.js"></script>
   </body>
 </html>
